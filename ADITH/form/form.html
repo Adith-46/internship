@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Validation</title>
+  <link rel="stylesheet" href="formstyle.css">
+</head>
+<body>
+
+  <h2>INTERACTIVE FORM </h2>
+  
+  <form id="myForm" onsubmit="validateForm(event)">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br>
+    
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br>
+
+    <label for="phone">Phone No:</label><br>
+    <input type="phone" id="phone" name="phone"><br><br>
+    
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password"><br><br>
+    
+    <input type="submit" value="Submit">
+  </form>
+  
+  <div id="errorMessages"></div>
+
+  <script src="formscript.js"></script>
+</body>
+</html>
